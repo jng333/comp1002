@@ -1,1 +1,88 @@
+<!doctype html>
+<!-- declare doctype-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>Pizzeria</title>   <!-- title of webpage-->
+    <meta name="description" content="Order hot and fresh pizzas!">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--for font-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="flex">
+<header>
+    <!--div for logo-->
+    <div>
+        <a href="index.html">
+            <img src="./img/logo.png" alt="header logo">
+        </a>
+    </div>
+    <img src="./img/chef.png" alt="italian chef">
+</header>
+<section>
+    <h1>BUILD YOUR OWN PIZZA!</h1>
+</section>
+<form method="post" action="answers.php">      <!-- post answers here-->
+    <section>
+        <div>
+            <label for="numberOfPizzas">How many pizzas?:</label>
+            <input type="number" id="numberOfPizzas" name="numberOfPizzas" min="1" max="99" required>
+            <!--limit and max on pizzas-->
+        </div>
+        <div>
+            <input type="radio" id="small" name="lang" value="small" required>
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="lang" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="lang" value="large">
+            <label for="large">Large</label>                      <!-- size is required-->
+        </div>
 
+        <div>
+            <label for="crust">Pick your crust:</label>
+
+            <select name="crust" id="crust">
+                <option value="regular">Regular</option>
+                <option value="stuffedCrust">Stuffed Crust</option>
+                <option value="deepDish">Deep Dish</option>
+                <option value="thinCrust">Thin Crust</option>
+            </select>
+        </div>                              <!--crust is required-->
+
+        <div>
+            <input type="checkbox" id="choice1" name="v1" value="pepperoni">
+            <label for="choice1">Pepperoni</label>
+            <input type="checkbox" id="choice2" name="v2" value="sausage">
+            <label for="choice2">Sausage</label>
+            <input type="checkbox" id="choice3" name="v3" value="mushroom">
+            <label for="choice3">Mushroom</label>
+            <input type="checkbox" id="choice4" name="v4" value="peppers">
+            <label for="choice4">Peppers</label>
+        </div>
+        <div>
+            <input type="checkbox" id="choice5" name="v5" value="onion">
+            <label for="choice5">Onion</label>
+            <input type="checkbox" id="choice6" name="v6" value="bacon">
+            <label for="choice6">Bacon</label>
+            <input type="checkbox" id="choice7" name="v7" value="cheese">
+            <label for="choice7">Cheese</label>
+            <input type="checkbox" id="choice8" name="v8" value="chicken">
+            <label for="choice8">Chicken</label>                           <!--two rows for toppings-->
+        </div>
+        <div>
+
+            <p><input type="tel" placeholder="* Your Phone Number" name="phone" required></p>
+            <p><input type="text" placeholder="* Your Name" name="name" required></p>
+            <p><input type="email" placeholder="* Your Email" name="email" required></p>
+            <!--gets details from customer-->
+            <input type="submit" value="Place Order">  <!--submits info-->
+        </div>
+    </section>
+</form>
+
+</body>
+</html>
