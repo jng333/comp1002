@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+}
+
+.container {
+    color: white;
+    position: relative;
+    text-align: center;
+    z-index: -1;  /* sends photo behind text*/
+}
+
+.top-text {
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 5px;     /*replicates positioning from poster*/
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.leading-actor {
+    letter-spacing: 45px;
+    font-size: 1.4em;
+    color: white;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.actors-firstname {
+    text-align: center;
+    word-spacing: 70px;
+    font-size: 0.8em;
+    color: red;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.actors-lastname {
+    text-indent: 70px;           /* lines up names*/
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 86%;
+    word-spacing: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.director-credits {
+    font-family: "Roboto Thin", sans-serif;      /* change font */
+    letter-spacing: 8px;
+    font-size: 2.1em;
+    color: white;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*centers the text in the parent container (photo)*/
+}
+
+.movie-title {
+    letter-spacing: 5px;
+    font-weight: bold;
+    position: absolute;
+    color: red;
+    font-size: 11em;
+    top: 92.5%;
+    left: 50%;   /* keeps text in the middle of the page*/
+    transform: translate(-50%, -50%);
+}
+
+.release-date {
+    letter-spacing: 6px;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer {
+    font-size: 2em;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
